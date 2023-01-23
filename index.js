@@ -81,7 +81,7 @@ app.delete('/blogs/:id',(req,res)=>{
     const newBlogs = blogs.filter(blog => {
         return blog.id !==id})
     blogs = newBlogs;
-    res.redirect('/blogs');
+    res.redirect('/blogs/newBlog');  //Added a new route
 })
 
 
